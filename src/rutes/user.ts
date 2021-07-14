@@ -1,9 +1,10 @@
 import { Router }  from "express";
-import { getAll }  from "../controllers/user";
+import { getAll, addUser } from '../controllers/user';
 
 const router = Router();
 
 router.get('/', getAll );
+router.post('/', addUser);
 
 
 

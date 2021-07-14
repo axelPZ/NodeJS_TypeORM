@@ -20,7 +20,6 @@ export class User{
     })
     lastName: string;
 
-
     @Column( { 
         type: "varchar", 
         length: 50, 
@@ -52,10 +51,16 @@ export class User{
     })
     email: string;
 
+    @Column({ 
+        type: "varchar",
+        length: 300,
+    })
+    password: string;
+
     
     @Column({
-        type: "int",
-        width: 50
+        type: "varchar",
+        length: 30
     })
-    phoneNumber: number;
+    phoneNumber: string;
 }
